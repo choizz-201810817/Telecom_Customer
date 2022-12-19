@@ -33,7 +33,7 @@ import pandas as pd
 from md_sql import pushToDB, pullFromDB
 from md import histPlot, distPlot, playML, getLC, getRoc
 # %%
-password = '20130511'
+password = '********'
 dbName = 'telecomDB'
 tableName = 'customer'
 df = pullFromDB(password, dbName, tableName)

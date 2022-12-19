@@ -83,7 +83,7 @@ def getRoc(model, X_train, X_test, y_train, y_test):
     plt.ylabel('True Positive Rate', fontsize=15)
 
 
-def getLC(model, X_train, X_test, y_trian, y_test, train_size, cv):
+def getLC(model, X_train, X_test, y_train, y_test, train_size, cv):
     getRoc(model, X_train, X_test, y_train, y_test)
 
     trainSizes, trainScore, testScore = learning_curve(model, X_train, y_train, train_sizes=train_size, cv=cv)
